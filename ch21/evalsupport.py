@@ -11,14 +11,14 @@ def deco_alpha(cls):
     return cls
 
 
-class MetaAlpha(type):
-    print('<[400]> MetaAlpha body')
+class MetaAleph(type):
+    print('<[400]> MetaAleph body')
 
     def __init__(cls, name, bases, dic):
-        print('<[500]> MetaAlpha.__init__')
+        print('<[500]> MetaAleph.__init__')
 
         def inner_2(self):
-            print('<[600]> MetaAlpha.__init__:inner_2')
+            print('<[600]> MetaAleph.__init__:inner_2')
 
         cls.method_z = inner_2
 
